@@ -32,3 +32,18 @@ function startServer() {
 }
 client.connect()
   .then(startServer);
+
+
+app.use('/bad', (request, response) => {
+  throw new Error('Shit broke!');
+});
+
+  // add 404
+app.use('*', (request, response) => {
+  response.status(404).send(`Can't find what you're looking for.`);
+});
+
+  // add 500
+app.use((err, request, response, next) => {
+  response.status(500).send(err.message);
+});

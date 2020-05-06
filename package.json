@@ -1,7 +1,7 @@
 {
   "name": "review-deploy",
   "version": "1.0.0",
-  "description": "",
+  "description": "> Update this application and deploy it to Heroku",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,5 +10,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "pg": "^8.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamowada/review-deploy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adamowada/review-deploy/issues"
+  },
+  "homepage": "https://github.com/adamowada/review-deploy#readme",
+  "devDependencies": {}
 }
